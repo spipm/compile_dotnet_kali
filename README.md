@@ -2,6 +2,7 @@
 
 ### Build image to generate workspace
 `docker build -t dotnet-genproject -f  Dockerfile-genproject .`
+
 ### Build image for compiling
 `docker build -t dotnet-builder .`
 
@@ -10,6 +11,10 @@
 
 ### Run image to generate workspace
 `docker run --rm -v $(pwd)/workspace:/workspace dotnet-genproject`
+
+### Edit code
+Change Program.cs with code like [this](Program_example.cs). This is an example to perform process hollowing.
+
 ### Run image to compile
 `docker run --rm -v $(pwd)/workspace:/workspace dotnet-builder`
 
