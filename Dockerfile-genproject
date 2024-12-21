@@ -1,0 +1,5 @@
+from mcr.microsoft.com/dotnet/sdk:6.0
+
+WORKDIR /workspace
+
+ENTRYPOINT ["dotnet", "new", "console", "-o", "/workspace"]
