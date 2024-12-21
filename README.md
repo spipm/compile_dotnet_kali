@@ -18,6 +18,8 @@ Change Program.cs with code like [this](Program_example.cs). This is an example 
 ### Run image to compile
 `docker run --rm -v $(pwd)/workspace:/workspace dotnet-builder`
 
+---
+
 For the .NET Docker SDK docs look [here](https://github.com/dotnet/dotnet-docker/blob/main/README.sdk.md) and [here](https://hub.docker.com/r/microsoft/dotnet-sdk), though Microsoft seems to be all over the place with this.
 
 [Here](https://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/overview?tabs=cli) is some information about compilation flags.
