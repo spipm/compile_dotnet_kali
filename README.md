@@ -5,6 +5,9 @@
 ### Build image for compiling
 `docker build -t dotnet-builder .`
 
+### Make workspace directory
+`mkdir workspace`
+
 ### Run image to generate workspace
 `docker run --rm -v $(pwd)/workspace:/workspace dotnet-genproject`
 ### Run image to compile
